@@ -10,7 +10,6 @@ const Pagination = ( { pagesCount, postName } ) => {
 	if ( ! pagesCount || ! postName ) {
 		return null;
 	}
-	
 	const router = useRouter();
 	const currentPageNo = parseInt( router?.query?.pageNo ?? 1 ) || 1;
 	

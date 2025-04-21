@@ -2,9 +2,7 @@ import Image from '../image';
 import { isEmpty } from 'lodash';
 
 const CheckoutCartItem = ( { item } ) => {
-	
 	const productImg = item?.data?.images?.[0] ?? '';
-	
 	return (
 		<tr className="woo-next-cart-item" key={ item?.productId ?? '' }>
 			<td className="woo-next-cart-element">
