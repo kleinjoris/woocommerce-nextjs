@@ -4,11 +4,8 @@ import Abbr from "./form-elements/abbr";
 import ArrowDown from "../icons/ArrowDown";
 
 const CountrySelection = ({input, handleOnChange, countries, isShipping}) => {
-	
 	const {country, errors} = input || {};
-	
 	const inputId = `country-${isShipping ? 'shipping' : 'billing'}`;
-	
 	return (
 		<div className="mb-3">
 			<label className="leading-7 text-sm text-gray-700" htmlFor={inputId}>

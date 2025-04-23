@@ -7,13 +7,11 @@ const Products = ({ products }) => {
 	}
 	return (
 		<div className="flex flex-wrap -mx-3 overflow-hidden">
-			
 			{ products.length ? products.map( product => {
 				return (
 					<Product key={ product?.id } product={product} />
 				)
 			} ) : null }
-		
 		</div>
 	)
 }

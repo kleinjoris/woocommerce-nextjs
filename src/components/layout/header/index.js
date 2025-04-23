@@ -1,18 +1,14 @@
 import Link from 'next/link';
 import { useContext, useState } from 'react';
 import { isEmpty } from 'lodash';
-
 import { BurgerIcon, TailwindIcon, Bag, User, Wishlist } from '../../icons';
 import { AppContext } from '../../context';
 import { getPathNameFromUrl } from '../../../utils/miscellaneous';
 
 const Header = ( { header } ) => {
-	
 	const [ cart, setCart ] = useContext( AppContext );
 	const { headerMenuItems, siteDescription, siteLogoUrl, siteTitle } = header || {};
-	
 	const [ isMenuVisible, setMenuVisibility ] = useState( false );
-	
 	return (
 		<>
 			<div className="header">

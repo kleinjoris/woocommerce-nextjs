@@ -6,21 +6,18 @@ export const AppContext = React.createContext([
 
 export const AppProvider = ( props ) => {
 	
-	const [ cart, setCart ] = useState( null );
-	
+	const [ cart, setCart ] = useState( null );	
 	/**
 	 * This will be called once on initial load ( component mount ).
 	 *
 	 * Sets the cart data from localStorage to `cart` in the context.
 	 */
 	useEffect( () => {
-		
 		if ( process.browser ) {
 			let cartData = localStorage.getItem( 'next-cart' );
 			cartData = null !== cartData ? JSON.parse( cartData ) : '';
 			setCart( cartData );
 		}
-		
 	}, [] );
 	
 	/**

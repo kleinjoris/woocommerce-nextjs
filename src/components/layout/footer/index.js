@@ -12,11 +12,8 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 const Footer = ( { footer } ) => {
-	
 	const { copyrightText, footerMenuItems, sidebarOne, sidebarTwo, socialLinks } = footer || {};
 	const [ isMounted, setMount ] = useState( false );
-	
-	
 	useEffect( () => {
 		setMount( true );
 	}, [] );

@@ -4,9 +4,7 @@ import StateSelection from "./states-selection";
 import InputField from "./form-elements/input-field";
 
 const Address = ({input, countries, states, handleOnChange, isFetchingStates, isShipping}) => {
-	
 	const {errors} = input || {};
-	
 	return (
 		<>
 			<div className="flex flex-wrap overflow-hidden sm:-mx-3">

@@ -3,11 +3,9 @@ import { getFormattedDate, sanitize } from '../../utils/miscellaneous';
 import Image from '../image';
 
 const Comment = ( { comment, handleReplyButtonClick } ) => {
-	
 	if ( isEmpty( comment ) ) {
 		return null;
 	}
-	
 	return (
 		<article className="p-6 mb-6 text-base bg-white border-t border-gray-200 dark:border-gray-700 dark:bg-gray-900">
 			<footer className="flex justify-between items-center mb-4">

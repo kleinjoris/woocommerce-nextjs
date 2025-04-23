@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 
 const CheckboxField = ({ handleOnChange, checked, name, label, placeholder, containerClassNames }) => {
-	
 	return (
 		<div className={containerClassNames}>
 			<label className="leading-7 text-md text-gray-700 flex items-center cursor-pointer" htmlFor={name}>

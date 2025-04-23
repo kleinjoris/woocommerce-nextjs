@@ -1,12 +1,4 @@
-/**
- * External Dependencies
- */
-
 import Head from 'next/head';
-
-/**
- * Internal Dependencies.
- */
 import { AppProvider } from '../context';
 import Header from './header';
 import Footer from './footer';
